@@ -1,0 +1,110 @@
+/* Estilo da página index */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    display: none;
+}
+
+header {
+    background: #393E46;
+    margin-bottom: 80px;
+}
+
+header div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+header img {
+    width: 150px;
+    margin-left: -60px;
+    padding: 15px 0;
+}
+
+.contato-header {
+    display: flexbox;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato-header button {
+    box-shadow: 3px 3px 10px rgba(36, 36, 36, .5);
+    margin-left: 30px;
+    padding: 15px;
+    font-weight: 200;
+}
+
+.menu-section hr {
+    margin-bottom: -50px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-top: 65px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 15px;
+    transition: all 250ms linear 0s;
+}
+
+.contariner-corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    color: blue;
+    background: url(../_img/sites.jpg);
+    text-align: justify;
+}
+
+.contariner-corpo p {
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.contariner-corpo h1 {
+    margin-left: 150px;
+}
+.texto {
+    background: #fff;
+    box-shadow: 3px 3px 10px rgba(36, 36, 36, .5);
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    margin-top: -50px;
+}
+
+.conteiner-img {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.logos-div {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+/* Estilo da página contato */
