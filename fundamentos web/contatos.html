@@ -10,16 +10,19 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Contatos</a></li>
+        
     </ul>
 
     <h1>Contatos</h1>
 
     <form action="">
             <label for="nome">Nome</label><br>
-            <input type="text" name="nome" id="nome"><br>
+            <input type="text" name="nome" id="nome" onkeyup="validaNome()"><br>
+            <div id="txtNome"></div>
 
             <label for="email">E-mail</label><br>
-            <input type="email" name="email" id="email"><br><br>
+            <input type="email" name="email" id="email" onkeyup="validaEmail()"><br>
+            <div id="txtEmail"></div>
 
             <textarea name="Chat" id="" cols="30" rows="10"></textarea><br>
             <button>Enviar</button>
@@ -29,5 +32,7 @@
     <a href="https://github.com/Pedro170" target="_blank"><img src="https://camo.githubusercontent.com/fe89da2819f572e236c894ef533ba06f2da25838d05175fc4e038d401c73f58c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769746875622d3030303f7374796c653d666c61742d737175617265266c6f676f3d476974687562266c6f676f436f6c6f723d7768697465266c696e6b3d6c696e6b5f646f5f7365755f70657266696c5f6e6f5f676974687562" alt="logo do github"></a>
 
     <img src="https://camo.githubusercontent.com/d138b2897652aec51333cc0ac55ee1df99ecc5e67536d2f32a7a374df0158ebd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d476d61696c2d6331343433383f7374796c653d666c61742d737175617265266c6f676f3d476d61696c266c6f676f436f6c6f723d7768697465266c696e6b3d6d61696c746f3a7365755f656d61696c" alt="logo do gmail">
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

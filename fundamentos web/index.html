@@ -27,7 +27,7 @@
                         <h2>Menu Principal</h2>
                         <li><a href="#">home</a></li>
                         <li><a href="#corpo">protfólio</a></li>
-                        <li><a href="#servico">contatos</a></li>
+                        <li><a href="contatos.html">contatos</a></li>
                         <li><a href="#">blog</a></li>
                     </ul>
                 </nav>
@@ -38,14 +38,14 @@
 
     <section id="corpo">
         <div class="contariner-corpo">
-            <h1>Criação do Primeiro site</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores unde minima, repellat repudiandae ex libero rerum id culpa sequi, necessitatibus corrupti accusantium quibusdam fuga doloremque, animi quam consequuntur porro natus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur officia beatae ipsa quisquam mollitia quas, vero placeat rem! Debitis neque iste vitae ex, omnis aspernatur natus voluptas suscipit eaque.
-            </p>
-            <div>
-                <img src="" alt="" width="100%">
+            <div class="titulo-parag">
+                <h1>Criação do Primeiro site na Generation</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores unde minima, repellat repudiandae ex libero rerum id culpa sequi, necessitatibus corrupti accusantium quibusdam fuga doloremque, animi quam consequuntur porro natus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur officia beatae ipsa quisquam mollitia quas, vero placeat rem! Debitis neque iste vitae ex, omnis aspernatur natus voluptas suscipit eaque.
+                </p>
             </div>
+            <div><img src="" alt="" width="100%"></div>
         </div>
 
         <div class="texto-longo">
@@ -78,5 +78,61 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <form action="">
+            <div class="cont-form">
+                <img src="assets/_img/email.png" alt="">
+                <p>Joaosilva8882@gmail.com</p>
+                <img src="assets/_img/whatsapp.png" alt="">
+                <p>(11)97027-7484</p>
+            </div>
+            <div class="formulario">
+                <label for="nome"></label><br>
+                <input type="text" name="nome" id="nome" onkeyup="validaNome()" placeholder="nome">
+                <div id="txtNome"></div>
+    
+                <label for="email"></label><br>
+                <input type="email" name="email" id="email" onkeyup="validaEmail()" placeholder="e-mail">
+                <div id="txtEmail"></div>
+    
+                <textarea name="mensagem" id="" cols="61" rows="7" placeholder="mensagem"></textarea>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+        <div class="mapa-site">
+            <div class="conteiner-mapa">
+                <div class="texto-mapa">
+                    <h3>sobre</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quisquam repellendus nam quas reiciendis minima ullam <br><br> quaesaepe sed tempore, aliquam debitis optio a deserunt suscipit ex incidunt nihil iure?</p>
+                </div>
+                <div class="texto-mapa">
+                    <h3>contatos</h3>
+                    <hr>
+                    <p>Joaosilva8882@gmail.com</p>
+                    <p>(11)97024-7484</p><br>
+                    <h4>redes sociais</h4>
+                    <p></p>
+                    <p></p>
+                    <img src="" alt="">
+                    <img src="assets/_img/github.png" alt="">
+                    <img src="assets/_img/facebook.png" alt="">
+                    <img src="assets/_img/instagram.png" alt="">
+                </div>
+                <div class="texto-mapa navegacao">
+                    <h3>navegação</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Protfólio</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
