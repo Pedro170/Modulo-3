@@ -31,10 +31,21 @@ header img {
     display: flexbox;
     justify-content: space-around;
     text-align: center;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    margin-left: 76px;
+    margin-bottom: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato-header a, .mapa-final a, .texto-mapa a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s linear;
+}
+
+.contato-header a:hover, #menu a:hover, .mapa-final a:hover, .texto-mapa a:hover {
+    color: #3F0037;
+    transition: 0.5s linear;
 }
 
 .contato-header button {
@@ -44,17 +55,14 @@ header img {
     font-weight: 200;
 }
 
-.menu-section hr {
-    margin-bottom: -50px;
-}
-
 header nav ul {
     display: flex;
+    border-top: solid 1px white;
 }
 
 header nav ul li {
     list-style: none;
-    margin-top: 65px;
+    margin-top: 10px;
 }
 
 header nav ul li a {
@@ -70,15 +78,16 @@ header nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
     height: 450px;
     color: white;
-    background: url(../_img/banner.jpg) no-repeat;
+    background: url(../_img/algoritmo.jpg) no-repeat;
     text-align: justify;
 }
 
 .titulo-parag {
     display: flexbox;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 500px;
-    margin-left: 150px; 
+    margin-left: 150px;
 }
 
 .conteiner-img {
@@ -95,7 +104,7 @@ header nav ul li a {
     margin: 15px;
     margin-top: -50px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .logos-div {
@@ -123,11 +132,16 @@ form {
 .formulario input, textarea {
     background: none;
     border: none;
-    text-transform: uppercase;
     padding: 15px;
     border-bottom: solid 1px black;
-    font-weight: bold;
     color: #000;
+    width: 100%;
+}
+
+.formulario input:focus, textarea:focus {
+    border: solid 3px rgba(66, 0, 55, 0.5);
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .formulario textarea {
@@ -171,17 +185,16 @@ form {
     padding: 10px;
     margin-top: 25px;
     margin-bottom: 10px;
-    transition: 0.5s linear;
 }
 
 .cont-form img:hover {
-    background: #ddd;
+    background: rgba(66, 0, 55, 0.5);
     transition: 0.5s linear;
 }
 
 .conteiner-mapa {
     background: #393E46;
-    height: 300px;
+    height: 260px;
     display: flex;
     justify-content: center;
 }
@@ -197,16 +210,8 @@ form {
 
 .texto-mapa h3 {
     text-align: left;
-    margin-bottom: 30px;
-}
-
-.texto-mapa a {
-    color: white;
-    text-decoration: none;
-}
-
-.texto-mapa hr {
-    margin-top: -25px;
+    border-bottom: solid 1px white;
+    padding-bottom: 10px;
     margin-bottom: 30px;
 }
 
@@ -219,3 +224,43 @@ form {
     font-size: 14px;
     margin-bottom: 10px;
 }
+
+.texto-mapa img {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.mapa-final {
+    background: #393E46;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+
+.mapa-final p {
+    margin-top: 10px;
+}
+
+::-webkit-input-placeholder  { 
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+/*
+::-webkit-input-placeholder {
+    color: #000;
+ }
+
+ :-moz-placeholder { Firefox 18-
+    color: #000;  }
+
+ ::-moz-placeholder { Firefox 19+
+    color: #000;  
+ }
+
+ :-ms-input-placeholder {  
+    color: #000;  
+ }
+ */
+ 

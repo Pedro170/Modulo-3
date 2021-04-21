@@ -1,8 +1,6 @@
 let nome = document.getElementById('nome')
 let email = document.querySelector('#email')
-
-nome.style.width = '100%'
-email.style.width = '100%'
+let mensagem = document.querySelector('#mensagem')
 
 function validaNome() {
     if(nome.value.length < 3) {
@@ -24,4 +22,21 @@ function validaEmail() {
         txtEmail.innerHTML = 'E-mail válido'
         txtEmail.style.color = 'green'
     }
+}
+
+/*Efeitos de mouse redes sociais*/
+function mudaFoto(foto){
+  document.getElementById("face").src = foto
+}
+
+function trocaLogo(logo){
+  document.getElementById("insta").src = logo
+}
+
+function mudaLinkedin(icone){
+  document.querySelector("#linkedin").src = icone
+}
+
+function mudaGit(git) {
+    document.querySelector('#github').src = git
 }
