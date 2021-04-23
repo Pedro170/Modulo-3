@@ -90,6 +90,11 @@ header nav ul li a {
     margin-left: 150px;
 }
 
+.titulo-parag p {
+    margin-top: 5px;
+    line-height: 25px;
+}
+
 .conteiner-img {
     background: #ddd;
     display: flex;
@@ -151,7 +156,7 @@ form {
 
 .formulario button {
     padding: 15px;
-    width: 537px;
+    width: 530px;
     font-weight: bolder;
     font-size: 20px;
     border: solid 2px #393E46;
@@ -197,6 +202,7 @@ form {
     height: 260px;
     display: flex;
     justify-content: center;
+    border-bottom: solid 1px white;
 }
 
 .texto-mapa {

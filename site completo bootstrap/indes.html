@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .mapa-final {
+        background: #343A40;
+        text-align: center;
+        padding: 15px;
+        color: white;
+      }
+
+      .mapa-final a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .mapa-final p {
+          margin-top: 10px;
+      }
+
+      ::-webkit-input-placeholder  { 
+        text-transform:uppercase;
+        font-weight: bolder;
+      }
+    </style>
+
+    <title>Olá, mundo!</title>
+</head>
+<body>
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-hide" href="#"><img src="../Landing Page Bootstrap/assets/_img/logo-png.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto text-uppercase font-weight-bold text-info">
+            <li class="nav-item active">
+              <a class="nav-link text-info" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">postagem</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--/Menu-->
+
+      <!--Carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://s1.1zoom.me/big0/729/257269-Sepik.jpg" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://s1.1zoom.me/big0/729/257269-Sepik.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://s1.1zoom.me/big0/729/257269-Sepik.jpg" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <!--/Carousel-->
+
+    <!--jumbotron-->
+      <div class="jumbotron jumbotron-fluid text-info bg-dark">
+        <div class="container">
+          <h1 class="display-4 text-uppercase font-weight-bold">Compre aqui o seu lobo</h1>
+          <p class="lead font-italic">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+        </div>
+      </div>
+      <!--/jumbotron-->
+
+      <!--Card-->
+      <div class="container mb-5">
+        <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="../fundamentos web/assets/_img/logo-principal-pequeno.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../Landing Page Bootstrap/assets/_img/lobo.jpeg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Lobo Cinzento</h5>
+                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--/Card-->
+
+      <!--jumbotron-->
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container text-info">
+          <h1 class="display-4 text-uppercase font-weight-bold">Compre aqui o seu lobo</h1>
+          <p class="lead font-italic">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+        </div>
+      </div>
+      <!--/jumbotron-->
+
+      <div class="container mb-5">
+        <div class="row mt-5 d-flex justify-content-space-between">
+          <div class="col-md-12">
+              <div>
+                <iframe width="1115" height="550" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div> 
+          </div>
+        </div>
+        <div class="row mt-5 carrossel">
+          <div class="col-md-3">
+            <div>
+              <div>
+                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <div>
+                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <div>
+                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <div><iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--jumbotron-->
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container text-info">
+          <h1 class="display-4 text-uppercase font-weight-bold">Entre em contato</h1>
+        </div>
+      </div>
+      <!--/jumbotron-->
+
+      <!--Fromulário-->
+        <div class="container d-flex justify-content-center mb-3">
+          <div class="container">
+            <div div class="row mt-5 d-flex justify-content-space-between">
+             <div class="col-md-6 p-0">
+               <img src="../fundamentos web/assets/_img/pedro.jpg" alt="">
+               <p style="margin-left: 65px; margin-top: 15px; font-weight: 700;">Joaosilva8882@gmail.com</p> 
+             </div>
+             <div class="col-md-6 p-0">
+               <form>
+                 <div class="form-group">
+                   <label for="exampleFormControlInput1"></label>
+                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                 </div>
+                 <div class="form-group">
+                   <label for="exampleFormControlInput1"></label>
+                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-Mail">
+                 </div>
+                 <div class="form-group">
+                   <label for="exampleFormControlTextarea1"></label>
+                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Mensagem"></textarea>
+                 </div>
+
+                 <button class="btn btn-dark btn-lg btn-block">Enviar</button>
+               </form> 
+             </div>
+            </div>
+          </div> 
+        </div>
+      <!--Formulário-->
+
+      <!--Rodapé-->
+          <div class="mapa-final">
+            <a href="https://www.linkedin.com/in/pedrosantos170/" target="_blank" class="p-4"><img src="../fundamentos web/assets/_img/linkedin.png" alt="" id="linkedin" onmousemove="mudaLinkedin('../fundamentos web/assets/_img/linkedin-cor.png')" onmouseout="mudaLinkedin('../fundamentos web/assets/_img/linkedin.png')"></a>
+
+                <a href="https://github.com/Pedro170" target="_blank" class="p-4"><img src="../fundamentos web/assets/_img/github.png" alt="logo do github" id="github" onmousemove="mudaGit('../fundamentos web/assets/_img/github-cor.png')" onmouseout="mudaGit('../fundamentos web/assets/_img/github.png')"></a>
+
+                <a href="https://www.facebook.com/profile.php?id=100028389677293" target="_blank" class="p-4"><img src="../fundamentos web/assets/_img/facebook.png" alt="logo do facebook" id="face" onmouseover="mudaFoto('../fundamentos web/assets/_img/facebook-cor.png')" onmouseout="mudaFoto('../fundamentos web/assets/_img/facebook.png')"></a>
+
+                <a href="https://www.instagram.com/p.silva170/" target="_blank" class="p-4"><img src="../fundamentos web/assets/_img/instagram.png" alt="logo do instagram" id="insta" onmouseover="trocaLogo('../fundamentos web/assets/_img/instagram-cor.png')" onmouseout="trocaLogo('../fundamentos web/assets/_img/instagram.png')"></a>
+                <hr size="1px" color="white">
+            <p>Copyright &copy; 2021 João Pedro Santos - Todos os direitos reservados.</p>
+            <p>Mapa do site | <a href="">Política de privacidade</a></p>
+          </div>
+      <!--/Rodapé-->
+
+      <!-- JavaScript (Opcional) -->
+      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <script src="../fundamentos web/assets/_js/script.js"></script>
+</body>
+</html>
