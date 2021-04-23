@@ -7,6 +7,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
+      body {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      #text-gold {
+        color:yellow;
+      }
+
       .mapa-final {
         background: #343A40;
         text-align: center;
@@ -27,6 +35,28 @@
         text-transform:uppercase;
         font-weight: bolder;
       }
+
+      @media (max-width: 375px) {
+        .some{
+          display: none;
+        }
+      }
+      @media (max-width: 414px) {
+        .some {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          overflow: scroll;
+          align-items: center;
+        }
+
+        .some .row {
+          flex: content;
+          padding-top: 15px;
+          padding-left: -10px;
+          margin-left: 0;
+        }
+      }
     </style>
 
     <title>Olá, mundo!</title>
@@ -34,13 +64,13 @@
 <body>
 
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand text-hide" href="#"><img src="../Landing Page Bootstrap/assets/_img/logo-png.png" alt=""></a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="../Landing Page Bootstrap/assets/_img/logo-png.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="conteudoNavbarSuportado">
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto text-uppercase font-weight-bold text-info">
             <li class="nav-item active">
               <a class="nav-link text-info" href="#">Home <span class="sr-only">(página atual)</span></a>
@@ -52,11 +82,11 @@
               <a class="nav-link text-info" href="#">blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-info" href="#">sobre nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-info" href="#">postagem</a>
-            </li>
+                <a class="nav-link text-info" href="#">sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">postagem</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -94,8 +124,7 @@
     <!--jumbotron-->
       <div class="jumbotron jumbotron-fluid text-info bg-dark">
         <div class="container">
-          <h1 class="display-4 text-uppercase font-weight-bold">Compre aqui o seu lobo</h1>
-          <p class="lead font-italic">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+          <h1 class="display-4 text-uppercase font-weight-bold">Crie as fotos perfeitas para todos os momentos</h1>
         </div>
       </div>
       <!--/jumbotron-->
@@ -104,33 +133,24 @@
       <div class="container mb-5">
         <div class="card-deck">
             <div class="card">
-              <img class="card-img-top" src="../fundamentos web/assets/_img/logo-principal-pequeno.png" alt="Imagem de capa do card">
+              <img class="card-img-top" src="http://alucard.weebly.com/uploads/2/8/6/2/2862700/1946363_orig.jpg" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Atualizados 3 minutos atrás</small>
+                <p class="card-text">Este é um card maior com </p>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="../Landing Page Bootstrap/assets/_img/lobo.jpeg" alt="Imagem de capa do card">
+              <img class="card-img-top" src="http://alucard.weebly.com/uploads/2/8/6/2/2862700/2086404_orig.jpg" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Lobo Cinzento</h5>
                 <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
               </div>
-              <div class="card-footer">
-                <small class="text-muted">Atualizados 3 minutos atrás</small>
-              </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+              <img class="card-img-top" src="http://alucard.weebly.com/uploads/2/8/6/2/2862700/4203332_orig.jpg" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Título do card</h5>
                 <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Atualizados 3 minutos atrás</small>
               </div>
             </div>
           </div>
@@ -146,55 +166,29 @@
       </div>
       <!--/jumbotron-->
 
-      <div class="container mb-5">
-        <div class="row mt-5 d-flex justify-content-space-between">
-          <div class="col-md-12">
-              <div>
-                <iframe width="1115" height="550" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 some">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3L9BMWLF_j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-        </div>
-        <div class="row mt-5 carrossel">
-          <div class="col-md-3">
-            <div>
-              <div>
-                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+          <div class="col-md-6 some">
+            <div class="row pb-4 pl-5 ml-5">
+              <iframe width="340" height="190" src="https://www.youtube.com/embed/3L9BMWLF_j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <div>
-                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+            <div class="row pb-4 pl-5 ml-5">
+              <iframe width="340" height="190" src="https://www.youtube.com/embed/3L9BMWLF_j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <div>
-                <iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <div><iframe width="260" height="171" src="https://www.youtube.com/embed/Do6m3xALc80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="row pb-4 pl-5 ml-5 mb-5">
+              <iframe width="340" height="190" src="https://www.youtube.com/embed/3L9BMWLF_j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
-
-      <!--jumbotron-->
-      <div class="jumbotron jumbotron-fluid bg-dark">
-        <div class="container text-info">
-          <h1 class="display-4 text-uppercase font-weight-bold">Entre em contato</h1>
-        </div>
-      </div>
-      <!--/jumbotron-->
 
       <!--Fromulário-->
         <div class="container d-flex justify-content-center mb-3">
           <div class="container">
+            <h1 class="text-uppercase text-center">Entre em contato</h1>
             <div div class="row mt-5 d-flex justify-content-space-between">
              <div class="col-md-6 p-0">
                <img src="../fundamentos web/assets/_img/pedro.jpg" alt="">
@@ -204,15 +198,17 @@
                <form>
                  <div class="form-group">
                    <label for="exampleFormControlInput1"></label>
-                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                   <input type="email" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
+                   <div id="txtNome"></div>
                  </div>
                  <div class="form-group">
                    <label for="exampleFormControlInput1"></label>
-                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-Mail">
+                   <input type="email" class="form-control" id="email" placeholder="E-Mail" onkeyup="validaEmail()">
+                   <div id="txtEmail"></div>
                  </div>
                  <div class="form-group">
                    <label for="exampleFormControlTextarea1"></label>
-                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Mensagem"></textarea>
+                   <textarea class="form-control" id="mensagem" rows="6" placeholder="Mensagem"></textarea>
                  </div>
 
                  <button class="btn btn-dark btn-lg btn-block">Enviar</button>
@@ -221,7 +217,7 @@
             </div>
           </div> 
         </div>
-      <!--Formulário-->
+      <!--/Formulário-->
 
       <!--Rodapé-->
           <div class="mapa-final">
@@ -243,7 +239,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
       <script src="../fundamentos web/assets/_js/script.js"></script>
 </body>
 </html>
