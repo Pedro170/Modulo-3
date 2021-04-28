@@ -1,0 +1,29 @@
+.color {
+    color: #7D98A7;
+}
+
+.background {
+    background-color: #0A0C21;
+}
+
+ul.social-network {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa {
+    font-size: 35pt;
+    color: #7D98A7;
+    padding: 10px;
+}
+
+i:hover {
+    transition: linear 400ms;
+    color: #F92A87;
+}
