@@ -1,54 +1,54 @@
 <div>
     <div class="col-md-12 foto-fundo d-flex align-items-center justify-content-center">
         <div class="text-center">
-        <h1 class="mb-4 color">Cadastro</h1>
+        <h1 class="mb-3 color">Cadastro</h1>
         <div class="col-md-12 bg-login d-flex align-items-center justify-content-center">
             <div class="formulario">
                 <form>
                     <div class="form-group">
-                      <label for="nome"></label>
-                      <input type="text" class="form-control" id="IdNome" placeholder="Nome">
+                      <label for="nome">Nome</label>
+                      <input type="text" class="form-control color" id="IdNome" placeholder="Nome">
                     </div>
 
                     <div class="form-group">
-                      <label for="usuario"></label>
-                      <input type="text" class="form-control" id="IdUsuario" placeholder="Usuário">
+                      <label for="usuario">Usuario</label>
+                      <input type="text" class="form-control color" id="IdUsuario" placeholder="Usuário">
                     </div>
 
                     <div class="form-group">
-                        <label for="biografia"></label>
-                        <input type="text" class="form-control" id="IdBiografia" placeholder="Biografia">
+                        <label for="biografia">Biografia</label>
+                        <input type="text" class="form-control color" id="IdBiografia" placeholder="Biografia">
                     </div>
 
                     <div class="form-group">
-                        <label for="linkFoto"></label>
-                        <input type="text" class="form-control" id="Idlink" placeholder="Link da Foto">
+                        <label for="linkFoto">lFoto</label>
+                        <input type="text" class="form-control color" id="Idlink" placeholder="Link da Foto">
                     </div>
 
                     <div class="form-group">
-                        <label for="senha"></label>
-                        <input type="password" class="form-control" id="IdSenha" placeholder="Senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control color" id="IdSenha" placeholder="Senha" size="10">
+                        <i class="fa fa-eye color" aria-hidden="true" id="eyes" (click)="botaoClicado()"></i>
                     </div>
 
                     <div class="form-group">
-                        <label for="senha"></label>
-                        <input type="password" class="form-control" id="IdConfirmeSenha" placeholder="Confirme sua Senha">
+                        <label for="senha">cSenha</label>
+                        <input type="password" class="form-control color" id="IdConfirmeSenha" placeholder="Confirme sua Senha">
+                        <i class="fa fa-eye color" aria-hidden="true"></i>
                     </div>
 
                     <div class="form-group">
                         <label for="linkFoto"></label>
                         <select class="form-control select" name="tipo" id="tipo">
-                            <option>Selecione um tipo de usuário:</option>
+                            <option value="user">Selecione um tipo de usuário:</option>
                             <option value="Normal">Normal</option>
                             <option value="Adm">Administrador</option>
                         </select>
                     </div>
                     <div class="mt-4 mb-4">
-                        <button class="button color mr-5"   style="background: #F92A87; color: #030518;" type="submit">Cancelar</button>
+                        <button class="button color mr-5"   style="background: #F92A87; color: #030518;" type="submit" routerLink="/login">Cancelar</button>
                         <button class="button color" type="submit">Cadastrar</button>
                     </div>
-
-                    
                   </form>
             </div>
         </div>

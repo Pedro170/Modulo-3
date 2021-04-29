@@ -36,6 +36,18 @@
     border-radius: 5px;
 }
 
+.formulario label {
+    visibility: hidden;
+}
+
+.fa-eye {
+    display: block;
+    position: relative;
+    left: 80px;
+    bottom: 27px;
+    cursor: pointer;
+}
+
 .button {
     padding: 5px;
     padding-left: 10px;
@@ -62,3 +74,20 @@ p a:hover {
     transition: linear 400ms;
     color: #F92A87;
 }
+
+::-webkit-input-placeholder {
+    color: #7D98A7;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+    color: #7D98A7;
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: #7D98A7;  
+  }
+  
+  :-ms-input-placeholder {  
+    color: #7D98A7;  
+  }
