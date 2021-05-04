@@ -7,47 +7,48 @@
                 <form>
                     <div class="form-group">
                       <label for="nome">Nome</label>
-                      <input type="text" class="form-control color" id="IdNome" placeholder="Nome">
+                      <input [(ngModel)]='user.nome' type="text" class="form-control color" name="nome" id="IdNome" placeholder="Nome">
                     </div>
 
                     <div class="form-group">
                       <label for="usuario">Usuario</label>
-                      <input type="text" class="form-control color" id="IdUsuario" placeholder="Usuário">
+                      <input [(ngModel)]='user.usuario' type="text" class="form-control color" name="usuario" id="IdUsuario" placeholder="Usuário">
                     </div>
 
                     <div class="form-group">
                         <label for="biografia">Biografia</label>
-                        <input type="text" class="form-control color" id="IdBiografia" placeholder="Biografia">
+                        <input type="text" class="form-control color" name="biografia" id="IdBiografia" placeholder="Biografia">
                     </div>
 
                     <div class="form-group">
-                        <label for="linkFoto">lFoto</label>
-                        <input type="text" class="form-control color" id="Idlink" placeholder="Link da Foto">
+                        <label for="linkFoto">Link da Foto</label>
+                        <input [(ngModel)]='user.foto' type="text" class="form-control color" name="foto" id="Idfoto" placeholder="Link da Foto">
                     </div>
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" class="form-control color" id="IdSenha" placeholder="Senha" size="10">
-                        <i class="fa fa-eye color" aria-hidden="true" id="eyes" (click)="botaoClicado()"></i>
+                        <input (input)='confirmSenha($event)' type="password" class="form-control color" name="senha" id="IdSenha" placeholder="Senha" >
+                        <i class="fa fa-eye color" aria-hidden="true"></i>
                     </div>
 
                     <div class="form-group">
-                        <label for="senha">cSenha</label>
-                        <input type="password" class="form-control color" id="IdConfirmeSenha" placeholder="Confirme sua Senha">
+                        <label for="confirmSenha">confirmarSenha</label>
+                        <input [(ngModel)]='user.senha' type="password" class="form-control color"
+                        name="confirmSenha" id="IdConfirmSenha" placeholder="Confirme sua Senha">
                         <i class="fa fa-eye color" aria-hidden="true"></i>
                     </div>
 
                     <div class="form-group">
                         <label for="linkFoto"></label>
-                        <select class="form-control select" name="tipo" id="tipo">
-                            <option value="user">Selecione um tipo de usuário:</option>
-                            <option value="Normal">Normal</option>
-                            <option value="Adm">Administrador</option>
+                        <select class="form-control select" name="tipo" id="tipo" (change)='tipoUser($event)'>
+                            <option>Selecione um tipo de usuário:</option>
+                            <option value="normal">Normal</option>
+                            <option value="adm">Administrador</option>
                         </select>
                     </div>
                     <div class="mt-4 mb-4">
-                        <button class="button color mr-5"   style="background: #F92A87; color: #030518;" type="submit" routerLink="/login">Cancelar</button>
-                        <button class="button color" type="submit">Cadastrar</button>
+                        <button [routerLink]="['/login']" routerLinkActive="router-link-active"  class="button color mr-5 cancelar" style="background: #F92A87; color: #030518;" type="submit">Cancelar</button>
+                        <button type="submit" class="button color" (click)='cadastrar()'>Cadastrar</button>
                     </div>
                   </form>
             </div>

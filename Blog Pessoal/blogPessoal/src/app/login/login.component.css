@@ -43,7 +43,8 @@
 .fa-eye {
     display: block;
     position: relative;
-    left: 80px;
+    padding: 0;
+    left: 89px;
     bottom: 27px;
     cursor: pointer;
 }
