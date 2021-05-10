@@ -1,0 +1,21 @@
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover, a p:hover {
+    transition: linear 400ms;
+    color: #F92A87;
+}
+
+.fs-16 {
+    font-size: 16pt;
+}
+
+.color {
+    color: #7D98A7;
+}
+
+.background {
+    background-color: #0A0C21;
+}
