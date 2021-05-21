@@ -1,0 +1,39 @@
+.fundo {
+    background: #030518;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1, h4, h5 {
+    color: #7D98A7;
+}
+
+.btn-info {
+    border: none;
+    border-radius: 8px;
+    color: #0A0C21;
+    background: #7D98A7;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.btn-info:hover {
+    border: none;
+}
+
+
+.btn-danger {
+    border: none;
+    border-radius: 8px;
+    color: #0A0C21;
+    background: #F92A87;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-danger:hover {
+    border: none;
+}

@@ -66,6 +66,95 @@
     transition: linear 400ms;
 }
 
-.modal {
+
+/* MODAL */
+
+.modal-content {
+    background: rgba(125, 152, 167, 0.8);
+    border-radius: 10px;
+}
+
+.form-group label {
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group label a {
+    text-decoration: none;
+    color: rgba(249, 42, 135, 0.8);
+}
+
+.form-group .form-control {
+    border: solid 2px rgba(10, 12, 33, 0.5);
+    color: #0A0C21;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.form-group .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: none;
+    border-radius: 10px;
+    border: solid 2px rgba(10, 12, 33, 0.5);
+    background: transparent;
+}
+
+
+.form-group .form-control option {
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.modal-title {
+    margin-left: 137px;
+    color: #0A0C21;
+    text-transform: uppercase;
+}
+
+.modal-footer .button-btn {
     background-color: #030518;
+    border: none;
+}
+
+.modal-footer .button-btn {
+    padding: 12px;
+    background-color: #030518;
+    color: #7D98A7;
+}
+
+
+.modal-footer .button {
+    padding: 12px;
+    border: none;
+    background-color: #F92A87;
+}
+
+.modal-footer .button:hover {
+    border: none;
+    color: #030518;
+}
+
+::-webkit-input-placeholder {
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+:-moz-placeholder { /* Firefox 18- */
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+  
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; 
+}
+  
+:-ms-input-placeholder {  
+    color: #0A0C21;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; 
 }
